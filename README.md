@@ -9,7 +9,7 @@ def sum(a: int, b: int) -> int:
     return a + b
 
 @async_cast
-async def async_sum(a: float, b: int) -> int:
+async def async_sum(a: float, b: int) -> float:
     return a + b
 
 @dynamic_cast
@@ -19,5 +19,5 @@ def add_one(x: float) -> float:
 assert sum(1, 2) == 3
 assert sum("3", "4") == 7
 assert add_one("1.0") == 2.01
-assert asyncio.run(async_sum("1.01", 2)) == 3
+assert asyncio.run(async_sum("1.01", 2)) == 3.01
 ```
