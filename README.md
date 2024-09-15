@@ -4,6 +4,8 @@ This project has been moved to a new repository where the final version is activ
 
 ## Old Example (for reference)
 
+While this repository is no longer maintained, here's a sample of how the original `dynamic_cast` and `async_cast` decorators were used:
+
 ```python
 # python >= 3.10.5
 from dynamic_cast import dynamic_cast, async_cast
