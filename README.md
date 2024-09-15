@@ -1,3 +1,9 @@
+# Repository Moved to [dynamic-cast](https://github.com/Cxx-mlr/dynamic-cast)
+
+This project has been moved to a new repository where the final version is actively maintained and updated. Please visit [dynamic-cast](https://github.com/Cxx-mlr/dynamic-cast) for the latest code and documentation.
+
+## Old Example (for reference)
+
 ```python
 # python >= 3.10.5
 from dynamic_cast import dynamic_cast, async_cast
