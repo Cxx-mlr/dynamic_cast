@@ -29,3 +29,20 @@ assert sum("3", "4") == 7
 assert add_one("1.0") == 2.01
 assert asyncio.run(async_sum("1.01", 2)) == 3.01
 ```
+
+```py
+from dynamic_cast import dynamic_cast, async_cast
+import asyncio
+
+@dynamic_cast
+def multiply(a: int, b: int) -> int:
+    return a * b
+
+@async_cast
+async def async_multiply(a: float, b: float) -> float:
+    return a * b
+
+assert multiply(3, 4) == 12
+assert multiply("5", "6") == 30
+assert asyncio.run(async_multiply("2.0", "3.5")) == 7.0
+```
