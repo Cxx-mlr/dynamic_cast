@@ -51,5 +51,28 @@ assert multiply(3, 4) == 12
 assert multiply("5", "6") == 30
 assert subtract("10.5", "2.5") == 8.0
 assert asyncio.run(async_multiply("2.0", "3.5")) == 7.0
+```
 
+## String Manipulations
+
+```python
+from dynamic_cast import dynamic_cast, async_cast
+import asyncio
+
+@dynamic_cast
+def concatenate(x: str, y: str) -> str:
+    return x + y
+
+@async_cast
+async def async_upper(s: str.upper) -> str:
+    return s
+
+@dynamic_cast
+def repeat_string(s: str, times: int) -> str:
+    return s * times
+
+assert concatenate("Hello, ", "World!") == "Hello, World!"
+assert concatenate(1, 2) == "12"
+assert repeat_string(12, "3") == "121212"
+assert asyncio.run(async_upper("hello")) == "HELLO"
 ```
