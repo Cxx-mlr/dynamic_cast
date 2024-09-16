@@ -42,7 +42,13 @@ def multiply(a: int, b: int) -> int:
 async def async_multiply(a: float, b: float) -> float:
     return a * b
 
+@dynamic_cast
+def subtract(x: float, y: float) -> float:
+    return x - y
+
 assert multiply(3, 4) == 12
 assert multiply("5", "6") == 30
+assert subtract("10.5", "2.5") == 8.0
 assert asyncio.run(async_multiply("2.0", "3.5")) == 7.0
+
 ```
