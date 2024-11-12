@@ -76,3 +76,7 @@ assert concatenate(1, 2) == "12"
 assert repeat_string(12, "3") == "121212"
 assert asyncio.run(async_upper("hello")) == "HELLO"
 ```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
